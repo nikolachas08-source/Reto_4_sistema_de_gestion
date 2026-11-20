@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Clase Reserva: integra cliente, servicio, duración y estado. (Rol 5)
 
-Responsable: Nicolas David Ramirez Sanchez (@usuario3).
+Responsable: Nicolas David Ramirez Sanchez (@nikolachas08-source).
 """
 
 # Enum: estados cerrados de una reserva.

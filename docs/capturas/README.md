@@ -1,6 +1,6 @@
 # Evidencias con fecha y hora
 
-Generadas automáticamente el **2026-11-20 02:22:20** desde `D:\Downloads\Programacion\software-fj-grupo-XXX`.
+Generadas automáticamente el **2026-11-20 02:22:20** ejecutando el proyecto desde el entorno local del grupo.
 Muestran la identificación del grupo (599), sin nombres personales.
 
 | Archivo | Contenido |

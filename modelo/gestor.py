@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Gestor con las listas internas de clientes, servicios y reservas (sin base de datos). (Roles 1 y 5)
 
-Responsable: Nicolas David Ramirez Sanchez (@usuario3).
+Responsable: Nicolas David Ramirez Sanchez (@nikolachas08-source).
 """
 
 # Clase de cliente.

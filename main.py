@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Punto de entrada de Software FJ: ejecuta la simulación y abre la interfaz gráfica. (Rol 1)
 
-Responsable: Nicolas David Ramirez Sanchez (@usuario3).
+Responsable: Nicolas David Ramirez Sanchez (@nikolachas08-source).
 
 Uso:
     python main.py                 -> simulación en consola y luego la interfaz gráfica

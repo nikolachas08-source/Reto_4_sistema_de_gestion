@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Simulación de 24 operaciones completas (válidas e inválidas) sobre el sistema. (Rol 5)
 
-Responsable: Nicolas David Ramirez Sanchez (@usuario3).
+Responsable: Nicolas David Ramirez Sanchez (@nikolachas08-source).
 """
 
 # datetime: fecha y hora de la ejecución.
