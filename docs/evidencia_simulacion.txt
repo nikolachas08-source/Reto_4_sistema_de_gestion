@@ -1,0 +1,97 @@
+Integrantes: Andrés Ovidio Tobar Ladino | Livan Jussete Vargas Perdomo | Nicolas David Ramirez Sanchez
+Integrantes: Grupo 599
+========================================================================
+  SIMULACIÓN DEL SISTEMA - SOFTWARE FJ (FASE 4)
+  Fecha y hora: 20/11/2026 02:21:24
+========================================================================
+
+--- Operación 01: Registro válido de cliente 1 ---
+  [OK] Cliente [CLI-01] Andrés Tobar - Doc: 1012345678 - andres.tobar@unad.edu.co
+
+--- Operación 02: Registro válido de cliente 2 ---
+  [OK] Cliente [CLI-02] Livan Vargas - Doc: 1098765432 - livan.vargas@unad.edu.co
+
+--- Operación 03: Registro válido de cliente 3 ---
+  [OK] Cliente [CLI-03] Carlos Gómez - Doc: 80123456 - carlos.gomez@gmail.com
+
+--- Operación 04: Cliente inválido: documento con letras ---
+  [CONTROLADO] ClienteInvalidoError: El documento debe tener entre 7 y 12 dígitos numéricos.
+  Causa original: ValueError: El documento debe tener entre 7 y 12 dígitos numéricos.
+
+--- Operación 05: Cliente inválido: correo sin dominio ---
+  [CONTROLADO] ClienteInvalidoError: El correo electrónico no tiene un formato válido.
+  Causa original: ValueError: El correo electrónico no tiene un formato válido.
+
+--- Operación 06: Cliente inválido: documento duplicado ---
+  [CONTROLADO] ClienteInvalidoError: Ya existe un cliente con el documento 1012345678.
+
+--- Operación 07: Servicio válido: sala de juntas ---
+  [OK] Reserva de sala 'Sala de Juntas Principal' (capacidad 20 personas, $60,000.00 por hora)
+
+--- Operación 08: Servicio inválido: costo negativo ---
+  [CONTROLADO] ServicioNoDisponibleError: El campo 'costo base' debe ser mayor que cero.
+  Causa original: ValueError: El campo 'costo base' debe ser mayor que cero.
+
+--- Operación 09: Servicio válido: alquiler de servidor ---
+  [OK] Alquiler de equipo 'Servidor de Alto Rendimiento' (serial SRV-DELL-9922, $150,000.00 por día)
+
+--- Operación 10: Servicio válido: asesoría especializada ---
+  [OK] Asesoría en 'Ingeniería de Software' - Asesoría en Arquitectura de Software ($100,000.00 por sesión)
+
+--- Operación 11: Servicio inválido: capacidad cero ---
+  [CONTROLADO] ServicioNoDisponibleError: El campo 'capacidad' debe ser mayor que cero.
+  Causa original: ValueError: El campo 'capacidad' debe ser mayor que cero.
+
+--- Operación 12: Reserva exitosa de sala (descuento + IVA) ---
+  [OK] Reserva [RES-2001] Andrés Tobar -> Sala de Juntas Principal x 3 horas | Confirmada | $182,070.00
+
+--- Operación 13: Reserva exitosa de equipo (seguro adicional) ---
+  [OK] Reserva [RES-2002] Livan Vargas -> Servidor de Alto Rendimiento x 4 días | Confirmada | $630,000.00
+
+--- Operación 14: Reserva exitosa de asesoría (+ variantes de cálculo) ---
+  [OK] Reserva [RES-2003] Carlos Gómez -> Asesoría en Arquitectura de Software x 2 sesiones | Confirmada | $250,000.00
+        Variantes: con IVA $297,500.00 | con 10% desc. $225,000.00 | desc.+IVA $267,750.00
+
+--- Operación 15: Reserva fallida: duración cero ---
+  [CONTROLADO] ReservaInvalidaError: Duración inválida: El campo 'duración' debe ser mayor que cero.
+  Causa original: ValueError: El campo 'duración' debe ser mayor que cero.
+
+--- Operación 16: Reserva fallida: capacidad de sala excedida ---
+  [CONTROLADO] ServicioNoDisponibleError: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+
+--- Operación 17: Reserva fallida: servicio no disponible ---
+  [CONTROLADO] ServicioNoDisponibleError: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+
+--- Operación 18: Reserva fallida: parámetro no soportado ---
+  [CONTROLADO] ParametroFaltanteError: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+
+--- Operación 19: Reserva fallida: cliente inexistente ---
+  [CONTROLADO] ClienteInvalidoError: No existe el cliente 'CLI-99'.
+
+--- Operación 20: Reserva fallida: descuento de 150% ---
+  [CONTROLADO] CalculoInconsistenteError: El descuento no puede superar el 100%.
+
+--- Operación 21: Error grave inesperado (ZeroDivisionError encadenado) ---
+  [CONTROLADO] ReservaInvalidaError: Falla grave al procesar la reserva RES-2008.
+  Causa original: ZeroDivisionError: float division by zero
+
+--- Operación 22: Confirmar una reserva sin procesar ---
+  [CONTROLADO] OperacionNoPermitidaError: Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+
+--- Operación 23: Cancelación válida de reserva ---
+  [OK] Reserva [RES-2001] Andrés Tobar -> Sala de Juntas Principal x 3 horas | Cancelada | $182,070.00
+
+--- Operación 24: Cancelación repetida (no permitida) ---
+  [CONTROLADO] OperacionNoPermitidaError: No se puede cancelar una reserva en estado Cancelada.
+
+========================================================================
+  RESUMEN DE LA SIMULACIÓN
+========================================================================
+  Operaciones ejecutadas : 24
+  Exitosas               : 10
+  Errores controlados    : 14
+  Resultado esperado     : 24 de 24
+  Clientes / Servicios   : 3 / 4
+  Reservas por estado    : {'Cancelada': 1, 'Confirmada': 2, 'Fallida': 4, 'Error crítico': 1, 'Pendiente': 1}
+  Log generado en        : D:\Downloads\Programacion\software-fj-grupo-XXX\logs\sistema.log
+========================================================================

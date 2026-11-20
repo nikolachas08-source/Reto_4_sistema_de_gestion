@@ -1,0 +1,1097 @@
+2026-11-20 04:15:40,579 - INFO - [main.py:61] - Aplicación iniciada por: Andrés Ovidio Tobar Ladino; Livan Jussete Vargas Perdomo; Nicolas David Ramirez Sanchez
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:282] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 04:15:40,579 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 04:15:40,579 - INFO - [gestor.py:76] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 01 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 04:15:40,579 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 04:15:40,579 - INFO - [gestor.py:76] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 02 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 04:15:40,579 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 04:15:40,579 - INFO - [gestor.py:76] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 03 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 04:15:40,579 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 04:15:40,579 - WARNING - [simulaciones.py:301] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 04:15:40,579 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 04:15:40,579 - WARNING - [simulaciones.py:301] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 04:15:40,579 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 04:15:40,579 - ERROR - [gestor.py:71] - Cliente duplicado (documento 1012345678).
+2026-11-20 04:15:40,579 - WARNING - [simulaciones.py:301] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 04:15:40,579 - INFO - [gestor.py:93] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 07 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 04:15:40,579 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 04:15:40,579 - WARNING - [simulaciones.py:301] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 04:15:40,579 - INFO - [gestor.py:93] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 09 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 04:15:40,579 - INFO - [gestor.py:93] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 10 finalizada con resultado: ok.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 04:15:40,579 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 04:15:40,579 - WARNING - [simulaciones.py:301] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:326] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 04:15:40,579 - INFO - [simulaciones.py:289] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 04:15:40,579 - INFO - [reserva.py:95] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 04:15:40,579 - INFO - [reserva.py:137] - Procesando la reserva RES-2001.
+2026-11-20 04:15:40,579 - INFO - [reserva.py:190] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:213] - Reserva RES-2001 confirmada.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 12 finalizada con resultado: ok.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2002.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:190] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:213] - Reserva RES-2002 confirmada.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 13 finalizada con resultado: ok.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2003.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:190] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:213] - Reserva RES-2003 confirmada.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 14 finalizada con resultado: ok.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 04:15:40,580 - ERROR - [reserva.py:72] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2004.
+2026-11-20 04:15:40,580 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 04:15:40,580 - WARNING - [reserva.py:171] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 04:15:40,580 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2005.
+2026-11-20 04:15:40,580 - WARNING - [reserva.py:171] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2006.
+2026-11-20 04:15:40,580 - WARNING - [reserva.py:171] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2007.
+2026-11-20 04:15:40,580 - WARNING - [reserva.py:171] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 04:15:40,580 - WARNING - [simulaciones.py:301] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:326] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 04:15:40,580 - INFO - [simulaciones.py:289] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 04:15:40,580 - INFO - [gestor.py:93] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 04:15:40,580 - INFO - [reserva.py:95] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 04:15:40,580 - INFO - [reserva.py:137] - Procesando la reserva RES-2008.
+2026-11-20 04:15:40,580 - ERROR - [reserva.py:179] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "/home/claude/software-fj-grupo-XXX/modelo/reserva.py", line 151, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/software-fj-grupo-XXX/simulaciones.py", line 29, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 04:15:40,582 - INFO - [reserva.py:196] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 04:15:40,582 - WARNING - [simulaciones.py:301] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:326] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:289] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 04:15:40,583 - INFO - [reserva.py:95] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 04:15:40,583 - WARNING - [reserva.py:205] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 04:15:40,583 - WARNING - [simulaciones.py:301] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:326] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:289] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 04:15:40,583 - INFO - [reserva.py:232] - Reserva RES-2001 cancelada.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:326] - Operación 23 finalizada con resultado: ok.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:289] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 04:15:40,583 - WARNING - [reserva.py:224] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 04:15:40,583 - WARNING - [simulaciones.py:301] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:326] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 04:15:40,583 - INFO - [simulaciones.py:359] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 04:15:40,583 - INFO - [main.py:73] - Aplicación finalizada.
+2026-11-20 01:13:34,046 - INFO - [main.py:63] - Aplicación iniciada por: Andrés Ovidio Tobar Ladino; Livan Jussete Vargas Perdomo; Nicolas David Ramirez Sanchez
+2026-11-20 01:13:34,046 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:13:34,046 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:13:34,046 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:13:34,046 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:13:34,046 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:13:34,046 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:13:34,047 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:13:34,047 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:13:34,047 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:13:34,047 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:13:34,047 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:13:34,047 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:13:34,047 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:13:34,047 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:13:34,047 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:13:34,047 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:13:34,047 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:13:34,047 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:13:34,047 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:13:34,048 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:13:34,048 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:13:34,048 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:13:34,048 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:13:34,048 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:13:34,048 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:13:34,048 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:34,048 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:13:34,048 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 01:13:34,048 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:13:34,048 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:13:34,048 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:13:34,048 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:13:34,048 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 01:13:34,049 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:13:34,049 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:13:34,049 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 01:13:34,049 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:13:34,049 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:13:34,049 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:13:34,049 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:34,049 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:13:34,049 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:13:34,049 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 01:13:34,049 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:13:34,049 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:13:34,049 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:13:34,049 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:13:34,050 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:13:34,050 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:13:34,050 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:13:34,050 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:13:34,050 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:13:34,050 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:13:34,050 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:13:34,050 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:13:34,050 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:13:34,050 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:13:34,050 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:34,050 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:13:34,050 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:13:34,050 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:13:34,050 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:13:34,050 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:13:34,050 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:13:34,050 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:13:34,050 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:13:34,050 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:13:34,055 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 01:13:34,055 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:13:34,055 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:13:34,055 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 01:13:34,055 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:13:34,055 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:13:34,055 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 01:13:34,055 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:13:34,055 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:13:34,055 - INFO - [main.py:75] - Aplicación finalizada.
+2026-11-20 01:13:37,528 - INFO - [main.py:63] - Aplicación iniciada por: Andrés Ovidio Tobar Ladino; Livan Jussete Vargas Perdomo; Nicolas David Ramirez Sanchez
+2026-11-20 01:13:37,528 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:13:37,528 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:13:37,529 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:13:37,529 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:13:37,529 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:13:37,529 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:13:37,529 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:13:37,529 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:13:37,529 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:13:37,529 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:13:37,529 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:13:37,529 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:13:37,529 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:13:37,529 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:13:37,529 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:13:37,529 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:13:37,530 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:13:37,530 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:13:37,530 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:13:37,530 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:13:37,530 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:13:37,530 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:13:37,530 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:13:37,530 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:13:37,530 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:37,530 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:13:37,530 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 01:13:37,530 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:13:37,530 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:13:37,531 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:13:37,531 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:13:37,531 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 01:13:37,531 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:13:37,531 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:13:37,531 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:13:37,531 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:13:37,531 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 01:13:37,531 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:13:37,531 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:13:37,531 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:13:37,531 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:13:37,531 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:13:37,531 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:37,532 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:13:37,532 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:13:37,532 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:13:37,532 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 01:13:37,532 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:13:37,532 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:13:37,532 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:13:37,532 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:13:37,532 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:13:37,532 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:13:37,532 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:13:37,532 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:13:37,532 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:13:37,532 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:13:37,532 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:13:37,532 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:13:37,532 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:13:37,532 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:13:37,533 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:13:37,533 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:13:37,533 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:13:37,533 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:13:37,533 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:13:37,533 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:13:37,533 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:13:37,533 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:13:37,533 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:13:37,533 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:13:37,533 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:13:37,537 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 01:13:37,537 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:13:37,537 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:13:37,537 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 01:13:37,537 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:13:37,537 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:13:37,537 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:13:37,538 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 01:13:37,538 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:13:37,538 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:13:37,538 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:13:37,538 - INFO - [main.py:75] - Aplicación finalizada.
+2026-11-20 01:25:39,601 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:25:39,635 - INFO - [cliente.py:85] - Cliente CLI-99 creado correctamente.
+2026-11-20 01:25:39,635 - INFO - [gestor.py:79] - Cliente CLI-99 registrado en el sistema.
+2026-11-20 01:25:39,643 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:25:39,651 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-99, servicio SRV-99).
+2026-11-20 01:25:39,651 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:25:39,651 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $214.20
+2026-11-20 01:25:39,651 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:25:52,704 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:26:16,180 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:37:58,088 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:37:58,223 - INFO - [cliente.py:85] - Cliente CLI-99 creado correctamente.
+2026-11-20 01:37:58,223 - INFO - [gestor.py:79] - Cliente CLI-99 registrado en el sistema.
+2026-11-20 01:37:58,231 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:37:58,238 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-99, servicio SRV-99).
+2026-11-20 01:37:58,238 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:37:58,238 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $219.55
+2026-11-20 01:37:58,238 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:37:58,246 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:37:58,252 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:37:58,258 - INFO - [servicios.py:78] - Servicio SRV-99 deshabilitado.
+2026-11-20 01:37:58,265 - INFO - [servicios.py:86] - Servicio SRV-99 habilitado.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:37:58,271 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:37:58,271 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:37:58,271 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:37:58,271 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:37:58,271 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:37:58,271 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:37:58,271 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:37:58,271 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:37:58,271 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:37:58,271 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:37:58,273 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:37:58,273 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:37:58,273 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:37:58,273 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:37:58,273 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:37:58,273 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:37:58,273 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:37:58,273 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:37:58,273 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:37:58,273 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:37:58,274 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:37:58,274 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:37:58,274 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:37:58,274 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $182070.00
+2026-11-20 01:37:58,274 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:37:58,274 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:37:58,274 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $630000.00
+2026-11-20 01:37:58,274 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:37:58,274 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:37:58,274 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:193] - Reserva RES-2004 procesada. Total: $250000.00
+2026-11-20 01:37:58,274 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Procesada.
+2026-11-20 01:37:58,274 - INFO - [reserva.py:216] - Reserva RES-2004 confirmada.
+2026-11-20 01:37:58,274 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:37:58,275 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:37:58,275 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:37:58,275 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:37:58,275 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:37:58,275 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:37:58,275 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:37:58,275 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:37:58,275 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:37:58,275 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:37:58,275 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:37:58,275 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:37:58,275 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:37:58,275 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:37:58,275 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:37:58,275 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:37:58,275 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:37:58,275 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:37:58,275 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:37:58,275 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:37:58,275 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:37:58,276 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:37:58,276 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:37:58,276 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:37:58,276 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:37:58,276 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:37:58,276 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:37:58,276 - WARNING - [reserva.py:174] - Reserva RES-2008 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:37:58,276 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Fallida.
+2026-11-20 01:37:58,276 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:37:58,276 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:37:58,276 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:37:58,276 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:37:58,276 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:37:58,276 - INFO - [reserva.py:140] - Procesando la reserva RES-2009.
+2026-11-20 01:37:58,276 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2009.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:37:58,280 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2009. Estado: Error crítico.
+2026-11-20 01:37:58,280 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2009.
+2026-11-20 01:37:58,280 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:37:58,280 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:37:58,281 - INFO - [reserva.py:98] - Reserva RES-2010 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:37:58,281 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2010 (estado Pendiente).
+2026-11-20 01:37:58,281 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:37:58,281 - INFO - [reserva.py:235] - Reserva RES-2002 cancelada.
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:37:58,281 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2002 (estado Cancelada).
+2026-11-20 01:37:58,281 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:37:58,281 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:39:15,381 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:39:15,415 - INFO - [cliente.py:85] - Cliente CLI-99 creado correctamente.
+2026-11-20 01:39:15,415 - INFO - [gestor.py:79] - Cliente CLI-99 registrado en el sistema.
+2026-11-20 01:39:15,426 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:39:15,435 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-99, servicio SRV-99).
+2026-11-20 01:39:15,435 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:39:15,435 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $214.20
+2026-11-20 01:39:15,435 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:48:34,183 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:48:34,417 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:48:34,418 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:48:34,418 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:48:34,418 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:48:34,418 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:48:34,418 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:48:34,418 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:48:34,418 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:48:34,418 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:48:34,418 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:48:34,418 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:48:34,418 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:48:34,418 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:48:34,419 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:48:34,419 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:48:34,419 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:48:34,419 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:48:34,419 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:48:34,419 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:48:34,419 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:48:34,419 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:48:34,419 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:48:34,419 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:48:34,419 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:48:34,419 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 01:48:34,420 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:48:34,420 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:48:34,420 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 01:48:34,420 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:48:34,420 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:48:34,420 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 01:48:34,420 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:48:34,420 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:48:34,420 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:48:34,420 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:48:34,420 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:48:34,420 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:48:34,421 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:48:34,421 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:48:34,421 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:48:34,421 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 01:48:34,421 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:48:34,421 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:48:34,421 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:48:34,421 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:48:34,421 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:48:34,421 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:48:34,421 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:48:34,421 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:48:34,421 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:48:34,421 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:48:34,421 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:48:34,421 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:48:34,421 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:48:34,421 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:48:34,421 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:48:34,422 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:48:34,422 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:48:34,422 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:48:34,422 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:48:34,422 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:48:34,422 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:48:34,422 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:48:34,422 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:48:34,422 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:48:34,422 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:48:34,423 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 01:48:34,423 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:48:34,423 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:48:34,423 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 01:48:34,423 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:48:34,423 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:48:34,423 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 01:48:34,423 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:48:34,423 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:49:03,012 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:49:03,182 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:49:03,183 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:49:03,183 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:49:03,183 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:49:03,183 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:49:03,183 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:49:03,183 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:49:03,183 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:49:03,183 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:49:03,183 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:49:03,183 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:49:03,183 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:49:03,184 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:49:03,184 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:49:03,184 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:49:03,184 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:49:03,184 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:49:03,184 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:49:03,184 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:49:03,184 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:49:03,184 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:49:03,184 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:49:03,184 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:49:03,184 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:03,184 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:49:03,184 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 01:49:03,185 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:49:03,185 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:49:03,185 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 01:49:03,185 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:49:03,185 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:49:03,185 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 01:49:03,185 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:49:03,185 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:49:03,185 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:49:03,185 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:49:03,185 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:03,185 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:49:03,185 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:49:03,185 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:49:03,185 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 01:49:03,185 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:49:03,186 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:49:03,186 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:49:03,186 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:49:03,186 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:49:03,186 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:49:03,186 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:49:03,186 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:49:03,186 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:49:03,186 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:49:03,186 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:49:03,186 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:49:03,186 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:49:03,186 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:03,186 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:49:03,186 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:49:03,186 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:49:03,186 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:49:03,186 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:49:03,186 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:49:03,186 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:49:03,186 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:49:03,187 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:49:03,190 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 01:49:03,190 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:49:03,190 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:49:03,190 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 01:49:03,190 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:49:03,190 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:49:03,190 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 01:49:03,190 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:49:03,190 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:49:31,387 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 01:49:31,558 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 01:49:31,558 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 01:49:31,558 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 01:49:31,558 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 01:49:31,558 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 01:49:31,558 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 01:49:31,558 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 01:49:31,558 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:49:31,558 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 01:49:31,559 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 01:49:31,559 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 01:49:31,559 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 01:49:31,559 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 01:49:31,559 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 01:49:31,559 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 01:49:31,559 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:49:31,559 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 01:49:31,559 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 01:49:31,559 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 01:49:31,559 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 01:49:31,560 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:49:31,560 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 01:49:31,560 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:31,560 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 01:49:31,560 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 01:49:31,560 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:49:31,560 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 01:49:31,560 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 01:49:31,560 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:49:31,560 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 01:49:31,560 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 01:49:31,560 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 01:49:31,560 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 01:49:31,561 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:49:31,561 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 01:49:31,561 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:31,561 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 01:49:31,561 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 01:49:31,561 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:49:31,561 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 01:49:31,561 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 01:49:31,561 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 01:49:31,561 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 01:49:31,561 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 01:49:31,561 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:49:31,561 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 01:49:31,561 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 01:49:31,561 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 01:49:31,561 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 01:49:31,561 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:49:31,561 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 01:49:31,561 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 01:49:31,561 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 01:49:31,561 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 01:49:31,562 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 01:49:31,562 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 01:49:31,562 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 01:49:31,562 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 01:49:31,562 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 01:49:31,562 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 01:49:31,562 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 01:49:31,562 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 01:49:31,562 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 01:49:31,562 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:49:31,562 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 01:49:31,562 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 01:49:31,562 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 01:49:31,566 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 01:49:31,566 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 01:49:31,566 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 01:49:31,566 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 01:49:31,566 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 01:49:31,566 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 01:49:31,566 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 01:49:31,566 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 01:49:31,567 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 01:49:31,567 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 01:49:31,567 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 01:49:31,948 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 01:49:31,981 - INFO - [cliente.py:85] - Cliente CLI-99 creado correctamente.
+2026-11-20 01:49:31,981 - INFO - [gestor.py:79] - Cliente CLI-99 registrado en el sistema.
+2026-11-20 01:49:31,989 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 01:49:31,996 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-99, servicio SRV-99).
+2026-11-20 01:49:31,996 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 01:49:31,996 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $214.20
+2026-11-20 01:49:31,996 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 02:21:24,842 - INFO - [main.py:61] - Aplicación iniciada por: Grupo 599
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:285] - ===== INICIO DE LA SIMULACIÓN (24 operaciones) =====
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:292] - Operación 01 iniciada: Registro válido de cliente 1
+2026-11-20 02:21:24,842 - INFO - [cliente.py:85] - Cliente CLI-01 creado correctamente.
+2026-11-20 02:21:24,842 - INFO - [gestor.py:79] - Cliente CLI-01 registrado en el sistema.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:329] - Operación 01 finalizada con resultado: ok.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:292] - Operación 02 iniciada: Registro válido de cliente 2
+2026-11-20 02:21:24,842 - INFO - [cliente.py:85] - Cliente CLI-02 creado correctamente.
+2026-11-20 02:21:24,842 - INFO - [gestor.py:79] - Cliente CLI-02 registrado en el sistema.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:329] - Operación 02 finalizada con resultado: ok.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:292] - Operación 03 iniciada: Registro válido de cliente 3
+2026-11-20 02:21:24,842 - INFO - [cliente.py:85] - Cliente CLI-03 creado correctamente.
+2026-11-20 02:21:24,842 - INFO - [gestor.py:79] - Cliente CLI-03 registrado en el sistema.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:329] - Operación 03 finalizada con resultado: ok.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:292] - Operación 04 iniciada: Cliente inválido: documento con letras
+2026-11-20 02:21:24,842 - ERROR - [cliente.py:81] - Cliente 'CLI-04' rechazado: El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 02:21:24,842 - WARNING - [simulaciones.py:304] - Operación 04: error controlado (ClienteInvalidoError): El documento debe tener entre 7 y 12 dígitos numéricos.
+2026-11-20 02:21:24,842 - INFO - [simulaciones.py:329] - Operación 04 finalizada con resultado: controlado.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 05 iniciada: Cliente inválido: correo sin dominio
+2026-11-20 02:21:24,843 - ERROR - [cliente.py:81] - Cliente 'CLI-05' rechazado: El correo electrónico no tiene un formato válido.
+2026-11-20 02:21:24,843 - WARNING - [simulaciones.py:304] - Operación 05: error controlado (ClienteInvalidoError): El correo electrónico no tiene un formato válido.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 05 finalizada con resultado: controlado.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 06 iniciada: Cliente inválido: documento duplicado
+2026-11-20 02:21:24,843 - INFO - [cliente.py:85] - Cliente CLI-06 creado correctamente.
+2026-11-20 02:21:24,843 - ERROR - [gestor.py:74] - Cliente duplicado (documento 1012345678).
+2026-11-20 02:21:24,843 - WARNING - [simulaciones.py:304] - Operación 06: error controlado (ClienteInvalidoError): Ya existe un cliente con el documento 1012345678.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 06 finalizada con resultado: controlado.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 07 iniciada: Servicio válido: sala de juntas
+2026-11-20 02:21:24,843 - INFO - [gestor.py:96] - Servicio SRV-01 registrado en el sistema.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 07 finalizada con resultado: ok.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 08 iniciada: Servicio inválido: costo negativo
+2026-11-20 02:21:24,843 - ERROR - [servicios.py:45] - Servicio 'SRV-02' rechazado: El campo 'costo base' debe ser mayor que cero.
+2026-11-20 02:21:24,843 - WARNING - [simulaciones.py:304] - Operación 08: error controlado (ServicioNoDisponibleError): El campo 'costo base' debe ser mayor que cero.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 08 finalizada con resultado: controlado.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 09 iniciada: Servicio válido: alquiler de servidor
+2026-11-20 02:21:24,843 - INFO - [gestor.py:96] - Servicio SRV-03 registrado en el sistema.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 09 finalizada con resultado: ok.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 10 iniciada: Servicio válido: asesoría especializada
+2026-11-20 02:21:24,843 - INFO - [gestor.py:96] - Servicio SRV-04 registrado en el sistema.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:329] - Operación 10 finalizada con resultado: ok.
+2026-11-20 02:21:24,843 - INFO - [simulaciones.py:292] - Operación 11 iniciada: Servicio inválido: capacidad cero
+2026-11-20 02:21:24,843 - ERROR - [servicios.py:222] - Sala SRV-05 con capacidad inválida: El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 02:21:24,844 - WARNING - [simulaciones.py:304] - Operación 11: error controlado (ServicioNoDisponibleError): El campo 'capacidad' debe ser mayor que cero.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 11 finalizada con resultado: controlado.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 12 iniciada: Reserva exitosa de sala (descuento + IVA)
+2026-11-20 02:21:24,844 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 02:21:24,844 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $182070.00
+2026-11-20 02:21:24,844 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:216] - Reserva RES-2001 confirmada.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 12 finalizada con resultado: ok.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 13 iniciada: Reserva exitosa de equipo (seguro adicional)
+2026-11-20 02:21:24,844 - INFO - [reserva.py:98] - Reserva RES-2002 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 02:21:24,844 - INFO - [reserva.py:140] - Procesando la reserva RES-2002.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:193] - Reserva RES-2002 procesada. Total: $630000.00
+2026-11-20 02:21:24,844 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2002. Estado: Procesada.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:216] - Reserva RES-2002 confirmada.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 13 finalizada con resultado: ok.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 14 iniciada: Reserva exitosa de asesoría (+ variantes de cálculo)
+2026-11-20 02:21:24,844 - INFO - [reserva.py:98] - Reserva RES-2003 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 02:21:24,844 - INFO - [reserva.py:140] - Procesando la reserva RES-2003.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:193] - Reserva RES-2003 procesada. Total: $250000.00
+2026-11-20 02:21:24,844 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2003. Estado: Procesada.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:216] - Reserva RES-2003 confirmada.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 14 finalizada con resultado: ok.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 15 iniciada: Reserva fallida: duración cero
+2026-11-20 02:21:24,844 - ERROR - [reserva.py:75] - Reserva rechazada por duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 02:21:24,844 - WARNING - [simulaciones.py:304] - Operación 15: error controlado (ReservaInvalidaError): Duración inválida: El campo 'duración' debe ser mayor que cero.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 15 finalizada con resultado: controlado.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 16 iniciada: Reserva fallida: capacidad de sala excedida
+2026-11-20 02:21:24,844 - INFO - [reserva.py:98] - Reserva RES-2004 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 02:21:24,844 - INFO - [reserva.py:140] - Procesando la reserva RES-2004.
+2026-11-20 02:21:24,844 - WARNING - [servicios.py:239] - Capacidad excedida en SRV-01: 50 > 20
+2026-11-20 02:21:24,844 - WARNING - [reserva.py:174] - Reserva RES-2004 fallida: La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2004. Estado: Fallida.
+2026-11-20 02:21:24,844 - WARNING - [simulaciones.py:304] - Operación 16: error controlado (ServicioNoDisponibleError): La sala 'Sala de Juntas Principal' admite 20 personas y se pidieron 50.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:329] - Operación 16 finalizada con resultado: controlado.
+2026-11-20 02:21:24,844 - INFO - [simulaciones.py:292] - Operación 17 iniciada: Reserva fallida: servicio no disponible
+2026-11-20 02:21:24,844 - INFO - [servicios.py:78] - Servicio SRV-03 deshabilitado.
+2026-11-20 02:21:24,844 - INFO - [reserva.py:98] - Reserva RES-2005 creada (cliente CLI-02, servicio SRV-03).
+2026-11-20 02:21:24,844 - INFO - [reserva.py:140] - Procesando la reserva RES-2005.
+2026-11-20 02:21:24,844 - WARNING - [reserva.py:174] - Reserva RES-2005 fallida: El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 02:21:24,845 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2005. Estado: Fallida.
+2026-11-20 02:21:24,845 - WARNING - [simulaciones.py:304] - Operación 17: error controlado (ServicioNoDisponibleError): El servicio 'Servidor de Alto Rendimiento' no está disponible.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:329] - Operación 17 finalizada con resultado: controlado.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:292] - Operación 18 iniciada: Reserva fallida: parámetro no soportado
+2026-11-20 02:21:24,845 - INFO - [reserva.py:98] - Reserva RES-2006 creada (cliente CLI-03, servicio SRV-04).
+2026-11-20 02:21:24,845 - INFO - [reserva.py:140] - Procesando la reserva RES-2006.
+2026-11-20 02:21:24,845 - WARNING - [reserva.py:174] - Reserva RES-2006 fallida: Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 02:21:24,845 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2006. Estado: Fallida.
+2026-11-20 02:21:24,845 - WARNING - [simulaciones.py:304] - Operación 18: error controlado (ParametroFaltanteError): Opciones no soportadas por Asesoría en Arquitectura de Software: color. Opciones válidas: alta_complejidad.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:329] - Operación 18 finalizada con resultado: controlado.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:292] - Operación 19 iniciada: Reserva fallida: cliente inexistente
+2026-11-20 02:21:24,845 - WARNING - [simulaciones.py:304] - Operación 19: error controlado (ClienteInvalidoError): No existe el cliente 'CLI-99'.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:329] - Operación 19 finalizada con resultado: controlado.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:292] - Operación 20 iniciada: Reserva fallida: descuento de 150%
+2026-11-20 02:21:24,845 - INFO - [reserva.py:98] - Reserva RES-2007 creada (cliente CLI-01, servicio SRV-01).
+2026-11-20 02:21:24,845 - INFO - [reserva.py:140] - Procesando la reserva RES-2007.
+2026-11-20 02:21:24,845 - WARNING - [reserva.py:174] - Reserva RES-2007 fallida: El descuento no puede superar el 100%.
+2026-11-20 02:21:24,845 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2007. Estado: Fallida.
+2026-11-20 02:21:24,845 - WARNING - [simulaciones.py:304] - Operación 20: error controlado (CalculoInconsistenteError): El descuento no puede superar el 100%.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:329] - Operación 20 finalizada con resultado: controlado.
+2026-11-20 02:21:24,845 - INFO - [simulaciones.py:292] - Operación 21 iniciada: Error grave inesperado (ZeroDivisionError encadenado)
+2026-11-20 02:21:24,845 - INFO - [gestor.py:96] - Servicio SRV-99 registrado en el sistema.
+2026-11-20 02:21:24,845 - INFO - [reserva.py:98] - Reserva RES-2008 creada (cliente CLI-01, servicio SRV-99).
+2026-11-20 02:21:24,845 - INFO - [reserva.py:140] - Procesando la reserva RES-2008.
+2026-11-20 02:21:24,845 - ERROR - [reserva.py:182] - Error crítico procesando la reserva RES-2008.
+Traceback (most recent call last):
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\modelo\reserva.py", line 154, in procesar
+    costo = self.__servicio.calcular_costo(self.__duracion, **self.__opciones)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Programacion\software-fj-grupo-XXX\simulaciones.py", line 32, in calcular_costo
+    return self.costo_base / (duracion - duracion)
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
+2026-11-20 02:21:24,852 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2008. Estado: Error crítico.
+2026-11-20 02:21:24,852 - WARNING - [simulaciones.py:304] - Operación 21: error controlado (ReservaInvalidaError): Falla grave al procesar la reserva RES-2008.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:329] - Operación 21 finalizada con resultado: controlado.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:292] - Operación 22 iniciada: Confirmar una reserva sin procesar
+2026-11-20 02:21:24,852 - INFO - [reserva.py:98] - Reserva RES-2009 creada (cliente CLI-02, servicio SRV-01).
+2026-11-20 02:21:24,852 - WARNING - [reserva.py:208] - Confirmación rechazada en RES-2009 (estado Pendiente).
+2026-11-20 02:21:24,852 - WARNING - [simulaciones.py:304] - Operación 22: error controlado (OperacionNoPermitidaError): Solo se puede confirmar una reserva procesada (estado actual: Pendiente).
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:329] - Operación 22 finalizada con resultado: controlado.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:292] - Operación 23 iniciada: Cancelación válida de reserva
+2026-11-20 02:21:24,852 - INFO - [reserva.py:235] - Reserva RES-2001 cancelada.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:329] - Operación 23 finalizada con resultado: ok.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:292] - Operación 24 iniciada: Cancelación repetida (no permitida)
+2026-11-20 02:21:24,852 - WARNING - [reserva.py:227] - Cancelación rechazada en RES-2001 (estado Cancelada).
+2026-11-20 02:21:24,852 - WARNING - [simulaciones.py:304] - Operación 24: error controlado (OperacionNoPermitidaError): No se puede cancelar una reserva en estado Cancelada.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:329] - Operación 24 finalizada con resultado: controlado.
+2026-11-20 02:21:24,852 - INFO - [simulaciones.py:362] - ===== FIN DE LA SIMULACIÓN: 24 de 24 según lo esperado =====
+2026-11-20 02:21:24,852 - INFO - [main.py:73] - Aplicación finalizada.
+2026-11-20 02:22:21,615 - INFO - [gui.py:120] - Graphical interface opened (LinkedIn-style workspace).
+2026-11-20 02:22:21,771 - INFO - [cliente.py:85] - Cliente CLI-10 creado correctamente.
+2026-11-20 02:22:21,771 - INFO - [gestor.py:79] - Cliente CLI-10 registrado en el sistema.
+2026-11-20 02:22:21,781 - INFO - [gestor.py:96] - Servicio SRV-10 registrado en el sistema.
+2026-11-20 02:22:21,789 - INFO - [reserva.py:98] - Reserva RES-2001 creada (cliente CLI-10, servicio SRV-10).
+2026-11-20 02:22:21,789 - INFO - [reserva.py:140] - Procesando la reserva RES-2001.
+2026-11-20 02:22:21,789 - INFO - [reserva.py:193] - Reserva RES-2001 procesada. Total: $214.20
+2026-11-20 02:22:21,789 - INFO - [reserva.py:199] - Cierre del procesamiento de RES-2001. Estado: Procesada.
