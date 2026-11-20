@@ -24,7 +24,7 @@ redistribución prevista en el plan (el rol 1 absorbe el rol 5 y el rol 2 absorb
 
 > Los usuarios `@por-confirmar` deben reemplazarse por las cuentas reales de esos dos integrantes
 > cuando se confirmen en el foro. La redistribución de roles (3 integrantes activos para 5 roles)
-> quedó registrada en el README, en el informe PDF y en la guía de GitHub.
+> quedó registrada en el README y en la guía de GitHub.
 
 ## Cómo ejecutar
 
@@ -58,7 +58,7 @@ Reto_4_sistema_de_gestion/
 │   ├── reserva.py       # Reserva y EstadoReserva
 │   └── gestor.py        # listas internas en memoria (clientes, servicios, reservas)
 ├── logs/sistema.log     # se genera al ejecutar
-└── docs/                # informe PDF, guía de GitHub, evidencia de la simulación y capturas
+└── docs/                # guía de GitHub, evidencia de la simulación y capturas
 ```
 
 Respecto a la estructura sugerida en el plan se agregaron `modelo/validaciones.py` y

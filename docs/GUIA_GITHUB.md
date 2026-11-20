@@ -56,7 +56,7 @@ Metas mínimas por integrante (plan de trabajo): 5 o más commits en 3 o más d�
    `docs/capturas/`. Cada integrante debe agregar además capturas del historial de commits, sus pull requests y el
    tablero desde su propia cuenta.
 2. Los datos del grupo (nombre del tercer integrante, número 599 y enlace del repositorio) ya están completos en
-   `README.md`, `main.py` y `docs/generar_informe.py`. Si cambia el enlace, ejecute
-   `python docs/generar_informe.py` para regenerar el PDF.
+   `README.md` y `main.py`. El informe PDF y su generador **no se incluyen en este repositorio**: se mantienen en la
+   carpeta local del grupo y se entregan por separado en el foro/entorno de entrega.
 3. Subir **un solo PDF** al foro/entorno de entrega (portada, introducción, enlace del repositorio, conclusiones y
    referencias APA), aprobado por todos en el foro antes del cierre (22 de noviembre).
