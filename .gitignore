@@ -1,0 +1,14 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+# Entornos virtuales
+venv/
+.venv/
+env/
+# Configuración de editores
+.vscode/
+.idea/
+# Sistema operativo
+.DS_Store
+Thumbs.db
+# Nota: logs/sistema.log NO se ignora; la rúbrica pide ver el archivo de log generado.
